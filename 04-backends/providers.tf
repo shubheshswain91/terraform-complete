@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.7"
+  required_version = "~> 1.5.0"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -10,14 +10,13 @@ terraform {
       version = "~> 3.0"
     }
   }
-
   backend "s3" {
-    bucket = "terraform-course-lauromueller-remote-backend"
-    key    = "04-backends/state.tfstate"
-    region = "eu-west-1"
+    bucket = "demo-backendfile-storage-bucket"
+    key    = "04-backend/state.tfstate"
+    region = "us-east-1"
   }
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-1"
 }
