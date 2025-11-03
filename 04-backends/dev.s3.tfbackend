@@ -1,5 +1,5 @@
 # For illustration purposes, not actively used.
 
-bucket = "terraform-course-lauromueller-remote-backend"
-key    = "04-backends/dev/state.tfstate"
-region = "eu-west-1"
+bucket = "demo-backendfile-storage-bucket"
+key    = "04-backend/dev/state.tfstate"
+region = "us-east-1"
