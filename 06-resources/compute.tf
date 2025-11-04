@@ -1,9 +1,9 @@
 resource "aws_instance" "web" {
-  # AMI ID NGINX  = ami-0dfee6e7eb44d480b
-  # AMI ID Ubuntu = ami-0652a081025ec9fee
-  ami                         = "ami-0dfee6e7eb44d480b"
+  # AMI ID NGINX  = ami-0d87339b5127ec34f
+  # AMI ID Ubuntu = ami-0c398cb65a93047f2
+  ami                         = "ami-0d87339b5127ec34f"
   associate_public_ip_address = true
-  instance_type               = "t2.micro"
+  instance_type               = "t3.micro"
   subnet_id                   = aws_subnet.public.id
   vpc_security_group_ids      = [aws_security_group.public_http_traffic.id]
   root_block_device {
