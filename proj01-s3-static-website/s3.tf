@@ -33,7 +33,6 @@ resource "aws_s3_bucket_policy" "static_website_public_read" {
 
 resource "aws_s3_bucket_website_configuration" "static_website" {
   bucket = aws_s3_bucket.static_website.id
-
   index_document {
     suffix = "index.html"
   }
