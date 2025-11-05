@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.7"
+  required_version = "~> 1.5.0"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -9,5 +9,10 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-1"
 }
+
+# provider "aws" {
+#  region = "ap-south-1"
+#  alias = "ap-mumbai"
+#}
