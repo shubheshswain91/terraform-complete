@@ -1,3 +1,8 @@
+variable "ec2_instance_count" {
+  type    = number
+  default = 1
+}
+
 variable "subnet_config" {
   type = map(object({
     cidr_block = string
